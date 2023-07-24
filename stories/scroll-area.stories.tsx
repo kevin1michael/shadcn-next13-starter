@@ -1,3 +1,4 @@
+// [build] library: 'shadcn'
 import React from "react"
 import { Meta, StoryObj } from "@storybook/react"
 

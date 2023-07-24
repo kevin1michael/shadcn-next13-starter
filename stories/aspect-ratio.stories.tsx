@@ -1,3 +1,4 @@
+// [build] library: 'shadcn'
 import Image from "next/image"
 import { Meta, StoryObj } from "@storybook/react"
 
