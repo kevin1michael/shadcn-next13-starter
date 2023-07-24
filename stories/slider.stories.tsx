@@ -1,3 +1,4 @@
+// [build] library: 'shadcn'
 import { Meta, StoryObj } from "@storybook/react"
 
 import { Slider } from "../components/ui/slider"
