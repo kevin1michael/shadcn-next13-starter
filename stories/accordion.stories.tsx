@@ -45,5 +45,5 @@ export const Base: Story = {
   args: {
     type: "single",
     collapsible: true,
-  },
+  }
 }
