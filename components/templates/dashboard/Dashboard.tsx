@@ -22,7 +22,7 @@ import { Overview } from "@/components/templates/dashboard/Overview";
 import { RecentSales } from "@/components/templates/dashboard/RecentSales";
 import { Search } from "@/components/templates/dashboard/Search";
 import TeamSwitcher from "@/components/templates/dashboard/TeamSwitcher";
-import { UserNav } from "@/components/templates/dashboard/UserNav";
+import { UserNav } from "@/components/templates/dashboard/DashboardUserNav";
 
 export const metadata: Metadata = {
   title: "Dashboard",
