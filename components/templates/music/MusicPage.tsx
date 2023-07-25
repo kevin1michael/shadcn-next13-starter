@@ -1,28 +1,23 @@
-import { Metadata } from "next"
-import Image from "next/image"
-import { PlusCircledIcon } from "@radix-ui/react-icons"
+import { Metadata } from "next";
+import Image from "next/image";
+import { PlusCircledIcon } from "@radix-ui/react-icons";
 
-import { Button } from "@/components/ui/button"
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
-import { Separator } from "@/components/ui/separator"
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "@/components/ui/tabs"
+import { Button } from "@/components/ui/button";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
+import { Separator } from "@/components/ui/separator";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-import { AlbumArtwork } from "@/components/templates/music/components/AlbumArtwork"
-import { Menu } from "@/components/templates/music/components/Menu"
-import { PodcastEmptyPlaceholder } from "@/components/templates/music/components/PodcastEmptyPlaceholder"
-import { Sidebar } from "@/components/templates/music/components/Sidebar"
-import { listenNowAlbums, madeForYouAlbums } from "./data/albums"
-import { playlists } from "./data/playlists"
+import { AlbumArtwork } from "@/components/templates/music/components/AlbumArtwork";
+import { Menu } from "@/components/templates/music/components/Menu";
+import { PodcastEmptyPlaceholder } from "@/components/templates/music/components/PodcastEmptyPlaceholder";
+import { Sidebar } from "@/components/templates/music/components/Sidebar";
+import { listenNowAlbums, madeForYouAlbums } from "./data/albums";
+import { playlists } from "./data/playlists";
 
 export const metadata: Metadata = {
   title: "Music App",
   description: "Example music app using the components.",
-}
+};
 
 export default function MusicPage() {
   return (
@@ -153,5 +148,5 @@ export default function MusicPage() {
         </div>
       </div>
     </>
-  )
+  );
 }

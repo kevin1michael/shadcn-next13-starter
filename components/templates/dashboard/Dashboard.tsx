@@ -1,20 +1,15 @@
-import { Metadata } from "next"
-import Image from "next/image"
+import { Metadata } from "next";
+import Image from "next/image";
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "@/components/ui/tabs";
+} from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import { CalendarDateRangePicker } from "@/components/templates/dashboard/CalendarDateRangePicker";
 import { MainNav } from "@/components/templates/dashboard/MainNav";
@@ -27,7 +22,7 @@ import { UserNav } from "@/components/templates/dashboard/DashboardUserNav";
 export const metadata: Metadata = {
   title: "Dashboard",
   description: "Example dashboard app using the components.",
-}
+};
 
 export default function DashboardPage() {
   return (
@@ -210,5 +205,5 @@ export default function DashboardPage() {
         </div>
       </div>
     </>
-  )
+  );
 }

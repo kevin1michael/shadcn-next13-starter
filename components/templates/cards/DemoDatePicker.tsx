@@ -1,6 +1,6 @@
 import DatePickerWithRange from "@/components/ui/date-picker-with-range";
-import { Card, CardContent } from "@/components/ui/card"
-import { Label } from "@/components/ui/label"
+import { Card, CardContent } from "@/components/ui/card";
+import { Label } from "@/components/ui/label";
 
 export function DemoDatePicker() {
   return (
@@ -14,5 +14,5 @@ export function DemoDatePicker() {
         </div>
       </CardContent>
     </Card>
-  )
+  );
 }

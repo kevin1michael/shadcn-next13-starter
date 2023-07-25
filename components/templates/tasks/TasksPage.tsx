@@ -1,27 +1,27 @@
-import { promises as fs } from "fs"
-import path from "path"
-import { Metadata } from "next"
-import Image from "next/image"
-import { z } from "zod"
+import { promises as fs } from "fs";
+import path from "path";
+import { Metadata } from "next";
+import Image from "next/image";
+import { z } from "zod";
 
-import { columns } from "@/components/templates/tasks/components/Columns"
-import { DataTable } from "@/components/templates/tasks/components/DataTable"
-import { UserNav } from "@/components/templates/tasks/components/TasksUserNav"
-import { taskSchema } from "./data/schema"
-import tasksJson from "./data/tasks.json"
+import { columns } from "@/components/templates/tasks/components/Columns";
+import { DataTable } from "@/components/templates/tasks/components/DataTable";
+import { UserNav } from "@/components/templates/tasks/components/TasksUserNav";
+import { taskSchema } from "./data/schema";
+import tasksJson from "./data/tasks.json";
 
 export const metadata: Metadata = {
   title: "Tasks",
   description: "A task and issue tracker build using Tanstack Table.",
-}
+};
 
 // Simulate a database read for tasks.
 function getTasks() {
-  return z.array(taskSchema).parse(tasksJson)
+  return z.array(taskSchema).parse(tasksJson);
 }
 
 export default function TaskPage() {
-  const tasks = getTasks()
+  const tasks = getTasks();
 
   return (
     <>
@@ -56,5 +56,5 @@ export default function TaskPage() {
         <DataTable data={tasks} columns={columns} />
       </div>
     </>
-  )
+  );
 }

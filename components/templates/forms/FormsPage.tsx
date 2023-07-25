@@ -1,50 +1,51 @@
-import * as React from "react"
-import { Metadata } from "next"
-import Image from "next/image"
+import * as React from "react";
+import { Metadata } from "next";
+import Image from "next/image";
 
-import { Separator } from "@/components/ui/separator"
-import { SidebarNav } from "@/components/templates/forms/components/SidebarNav"
-import SettingsDisplayPage from "@/components/templates/forms/display/SettingsDisplayPage"
-import SettingsNotificationsPage from "@/components/templates/forms/notifications/SettingsNotificationsPage"
-import SettingsAppearancePage from "@/components/templates/forms/appearance/SettingsAppearancePage"
-import SettingsAccountPage from "@/components/templates/forms/account/SettingsAccountPage"
-import SettingsProfilePage from "@/components/templates/forms/SettingsProfilePage"
+import { Separator } from "@/components/ui/separator";
+import { SidebarNav } from "@/components/templates/forms/components/SidebarNav";
+import SettingsDisplayPage from "@/components/templates/forms/display/SettingsDisplayPage";
+import SettingsNotificationsPage from "@/components/templates/forms/notifications/SettingsNotificationsPage";
+import SettingsAppearancePage from "@/components/templates/forms/appearance/SettingsAppearancePage";
+import SettingsAccountPage from "@/components/templates/forms/account/SettingsAccountPage";
+import SettingsProfilePage from "@/components/templates/forms/SettingsProfilePage";
 
 export const metadata: Metadata = {
   title: "Forms",
   description: "Advanced form example using react-hook-form and Zod.",
-}
+};
 
 const sidebarNavItems = [
   {
     title: "Profile",
     key: "profile",
-    page: <SettingsProfilePage/>
+    page: <SettingsProfilePage />,
   },
   {
     title: "Account",
     key: "account",
-    page: <SettingsAccountPage/>
+    page: <SettingsAccountPage />,
   },
   {
     title: "Appearance",
     key: "appearance",
-    page: <SettingsAppearancePage/>
+    page: <SettingsAppearancePage />,
   },
   {
     title: "Notifications",
     key: "notifications",
-    page: <SettingsNotificationsPage/>
+    page: <SettingsNotificationsPage />,
   },
   {
     title: "Display",
     key: "display",
-    page: <SettingsDisplayPage/>
+    page: <SettingsDisplayPage />,
   },
-]
+];
 
 export default function FormsPage() {
-  const [selectedSidebarItem, setSelectedSidebarItem] = React.useState("profile");
+  const [selectedSidebarItem, setSelectedSidebarItem] =
+    React.useState("profile");
 
   const selectedItem = sidebarNavItems.find((item) => {
     return item.key === selectedSidebarItem;
@@ -78,11 +79,14 @@ export default function FormsPage() {
         <Separator className="my-6" />
         <div className="flex flex-col space-y-8 lg:flex-row lg:space-x-12 lg:space-y-0">
           <aside className="-mx-4 lg:w-1/5">
-            <SidebarNav items={sidebarNavItems} setSelectedSidebarItem={setSelectedSidebarItem}/>
+            <SidebarNav
+              items={sidebarNavItems}
+              setSelectedSidebarItem={setSelectedSidebarItem}
+            />
           </aside>
           <div className="flex-1 lg:max-w-2xl">{selectedItem.page}</div>
         </div>
       </div>
     </>
-  )
+  );
 }

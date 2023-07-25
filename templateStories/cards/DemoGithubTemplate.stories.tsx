@@ -1,22 +1,20 @@
 // [build] library: 'chadcn'
 // [build] template: true
 
-import { Meta, StoryObj } from "@storybook/react"
+import { Meta, StoryObj } from "@storybook/react";
 
-import { DemoGithub } from "@/components/templates/cards/DemoGithub"
+import { DemoGithub } from "@/components/templates/cards/DemoGithub";
 
 const meta: Meta<typeof DemoGithub> = {
   title: "templates/DemoGithub",
   component: DemoGithub,
   argTypes: {},
-}
+};
 
-export default meta
+export default meta;
 
-type Story = StoryObj<typeof DemoGithub>
+type Story = StoryObj<typeof DemoGithub>;
 
 export const Base: Story = {
-  render: () => (
-    <DemoGithub/>
-  )
-}
+  render: () => <DemoGithub />,
+};

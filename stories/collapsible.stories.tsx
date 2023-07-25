@@ -1,22 +1,22 @@
-import { Meta, StoryObj } from "@storybook/react"
-import { ChevronsUpDown, Plus, X } from "lucide-react"
+import { Meta, StoryObj } from "@storybook/react";
+import { ChevronsUpDown, Plus, X } from "lucide-react";
 
-import { Button } from "../components/ui/button"
+import { Button } from "../components/ui/button";
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "../components/ui/collapsible"
+} from "../components/ui/collapsible";
 
 const meta: Meta<typeof Collapsible> = {
   title: "ui/Collapsible",
   component: Collapsible,
   tags: ["autodocs"],
   argTypes: {},
-}
-export default meta
+};
+export default meta;
 
-type Story = StoryObj<typeof Collapsible>
+type Story = StoryObj<typeof Collapsible>;
 
 export const Closed: Story = {
   render: (args) => (
@@ -49,7 +49,7 @@ export const Closed: Story = {
     open: false,
     onOpenChange: () => null,
   },
-}
+};
 export const Open: Story = {
   render: (args) => (
     <Collapsible {...args} className="w-[350px] space-y-2">
@@ -81,4 +81,4 @@ export const Open: Story = {
     open: true,
     onOpenChange: () => null,
   },
-}
+};

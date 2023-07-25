@@ -1,7 +1,7 @@
-import { Metadata } from "next"
-import Image from "next/image"
+import { Metadata } from "next";
+import Image from "next/image";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 import { DemoCookieSettings } from "@/components/templates/cards/DemoCookieSettings";
 import { DemoCreateAccount } from "@/components/templates/cards/DemoCreateAccount";
@@ -16,7 +16,7 @@ import { DemoTeamMembers } from "@/components/templates/cards/DemoTeamMembers";
 export const metadata: Metadata = {
   title: "Cards",
   description: "Examples of cards built using the components.",
-}
+};
 
 function DemoContainer({
   className,
@@ -26,11 +26,11 @@ function DemoContainer({
     <div
       className={cn(
         "flex items-center justify-center [&>div]:w-full",
-        className
+        className,
       )}
       {...props}
     />
-  )
+  );
 }
 
 export default function CardsPage() {
@@ -88,5 +88,5 @@ export default function CardsPage() {
         </div>
       </div>
     </>
-  )
+  );
 }

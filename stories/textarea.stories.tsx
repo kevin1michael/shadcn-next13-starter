@@ -1,25 +1,25 @@
-import { Meta, StoryObj } from "@storybook/react"
+import { Meta, StoryObj } from "@storybook/react";
 
-import { Button } from "../components/ui/button"
-import { Label } from "../components/ui/label"
-import { Textarea } from "../components/ui/textarea"
+import { Button } from "../components/ui/button";
+import { Label } from "../components/ui/label";
+import { Textarea } from "../components/ui/textarea";
 
 const meta: Meta<typeof Textarea> = {
   title: "ui/Textarea",
   component: Textarea,
   tags: ["autodocs"],
   argTypes: {},
-}
-export default meta
+};
+export default meta;
 
-type Story = StoryObj<typeof Textarea>
+type Story = StoryObj<typeof Textarea>;
 
 export const Default: Story = {
   render: (args) => <Textarea {...args} />,
   args: {
     placeholder: "Type your message here.",
   },
-}
+};
 
 export const Disabled: Story = {
   render: (args) => <Textarea {...args} />,
@@ -27,7 +27,7 @@ export const Disabled: Story = {
     ...Default.args,
     disabled: true,
   },
-}
+};
 
 export const WithLabel: Story = {
   render: (args) => (
@@ -37,7 +37,7 @@ export const WithLabel: Story = {
     </div>
   ),
   args: { ...Default.args },
-}
+};
 
 export const WithText: Story = {
   render: (args) => (
@@ -50,7 +50,7 @@ export const WithText: Story = {
     </div>
   ),
   args: { ...Default.args },
-}
+};
 
 export const WithButton: Story = {
   render: (args) => (
@@ -60,4 +60,4 @@ export const WithButton: Story = {
     </div>
   ),
   args: { ...Default.args },
-}
+};

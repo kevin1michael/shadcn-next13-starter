@@ -1,24 +1,21 @@
 // [build] library: 'chadcn'
 // [build] template: true
 
-import { Meta, StoryObj } from "@storybook/react"
+import { Meta, StoryObj } from "@storybook/react";
 
-import TasksPage from "@/components/templates/tasks/TasksPage"
+import TasksPage from "@/components/templates/tasks/TasksPage";
 
 const meta: Meta<typeof TasksPage> = {
   title: "templates/Dashboard",
   component: TasksPage,
   argTypes: {},
-}
+};
 
-export default meta
+export default meta;
 
-type Story = StoryObj<typeof TasksPage>
+type Story = StoryObj<typeof TasksPage>;
 
 export const Base: Story = {
-  render: () => (
-    <TasksPage/>
-  ),
-  args: {
-  }
-}
+  render: () => <TasksPage />,
+  args: {},
+};
