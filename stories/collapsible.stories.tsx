@@ -1,5 +1,6 @@
-import { Meta, StoryObj } from "@storybook/react";
-import { ChevronsUpDown, Plus, X } from "lucide-react";
+// [build] library: 'shadcn'
+import { Meta, StoryObj } from "@storybook/react"
+import { ChevronsUpDown, Plus, X } from "lucide-react"
 
 import { Button } from "../components/ui/button";
 import {

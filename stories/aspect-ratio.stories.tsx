@@ -1,5 +1,6 @@
-import Image from "next/image";
-import { Meta, StoryObj } from "@storybook/react";
+// [build] library: 'shadcn'
+import Image from "next/image"
+import { Meta, StoryObj } from "@storybook/react"
 
 import { AspectRatio } from "../components/ui/aspect-ratio";
 

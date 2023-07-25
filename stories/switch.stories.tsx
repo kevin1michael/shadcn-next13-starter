@@ -1,4 +1,5 @@
-import { Meta, StoryObj } from "@storybook/react";
+// [build] library: 'shadcn'
+import { Meta, StoryObj } from "@storybook/react"
 
 import { Label } from "../components/ui/label";
 import { Switch } from "../components/ui/switch";

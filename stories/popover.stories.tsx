@@ -1,5 +1,6 @@
-import { Meta, StoryObj } from "@storybook/react";
-import { Settings2 } from "lucide-react";
+// [build] library: 'shadcn'
+import { Meta, StoryObj } from "@storybook/react"
+import { Settings2 } from "lucide-react"
 
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
