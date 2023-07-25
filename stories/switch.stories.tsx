@@ -1,18 +1,18 @@
 // [build] library: 'shadcn'
-import { Meta, StoryObj } from "@storybook/react"
+import { Meta, StoryObj } from "@storybook/react";
 
-import { Label } from "../components/ui/label"
-import { Switch } from "../components/ui/switch"
+import { Label } from "../components/ui/label";
+import { Switch } from "../components/ui/switch";
 
 const meta: Meta<typeof Switch> = {
   title: "ui/Switch",
   component: Switch,
   tags: ["autodocs"],
   argTypes: {},
-}
-export default meta
+};
+export default meta;
 
-type Story = StoryObj<typeof Switch>
+type Story = StoryObj<typeof Switch>;
 
 export const Base: Story = {
   render: (args) => (
@@ -22,4 +22,4 @@ export const Base: Story = {
     </div>
   ),
   args: {},
-}
+};

@@ -1,5 +1,5 @@
 // [build] library: 'shadcn'
-import { Meta, StoryObj } from "@storybook/react"
+import { Meta, StoryObj } from "@storybook/react";
 
 import {
   ContextMenu,
@@ -15,17 +15,17 @@ import {
   ContextMenuSubContent,
   ContextMenuSubTrigger,
   ContextMenuTrigger,
-} from "../components/ui/context-menu"
+} from "../components/ui/context-menu";
 
 const meta: Meta<typeof ContextMenu> = {
   title: "ui/ContextMenu",
   component: ContextMenu,
   tags: ["autodocs"],
   argTypes: {},
-}
-export default meta
+};
+export default meta;
 
-type Story = StoryObj<typeof ContextMenu>
+type Story = StoryObj<typeof ContextMenu>;
 
 export const Base: Story = {
   render: (args) => (
@@ -78,4 +78,4 @@ export const Base: Story = {
     </ContextMenu>
   ),
   args: {},
-}
+};

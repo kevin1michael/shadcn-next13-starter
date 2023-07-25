@@ -1,19 +1,19 @@
 // [build] library: 'shadcn'
-import Image from "next/image"
-import { Meta, StoryObj } from "@storybook/react"
+import Image from "next/image";
+import { Meta, StoryObj } from "@storybook/react";
 
-import { AspectRatio } from "../components/ui/aspect-ratio"
+import { AspectRatio } from "../components/ui/aspect-ratio";
 
 const meta: Meta<typeof AspectRatio> = {
   title: "ui/AspectRatio",
   component: AspectRatio,
   tags: ["autodocs"],
   argTypes: {},
-}
+};
 
-export default meta
+export default meta;
 
-type Story = StoryObj<typeof AspectRatio>
+type Story = StoryObj<typeof AspectRatio>;
 
 export const Base: Story = {
   render: () => (
@@ -27,4 +27,4 @@ export const Base: Story = {
     </AspectRatio>
   ),
   args: {},
-}
+};

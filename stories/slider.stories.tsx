@@ -1,17 +1,17 @@
 // [build] library: 'shadcn'
-import { Meta, StoryObj } from "@storybook/react"
+import { Meta, StoryObj } from "@storybook/react";
 
-import { Slider } from "../components/ui/slider"
+import { Slider } from "../components/ui/slider";
 
 const meta: Meta<typeof Slider> = {
   title: "ui/Slider",
   component: Slider,
   tags: ["autodocs"],
   argTypes: {},
-}
-export default meta
+};
+export default meta;
 
-type Story = StoryObj<typeof Slider>
+type Story = StoryObj<typeof Slider>;
 
 export const Base: Story = {
   args: {
@@ -19,4 +19,4 @@ export const Base: Story = {
     max: 100,
     step: 1,
   },
-}
+};

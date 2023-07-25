@@ -1,17 +1,17 @@
 // [build] library: 'shadcn'
-import { Meta, StoryObj } from "@storybook/react"
+import { Meta, StoryObj } from "@storybook/react";
 
-import { Checkbox } from "../components/ui/checkbox"
+import { Checkbox } from "../components/ui/checkbox";
 
 const meta: Meta<typeof Checkbox> = {
   title: "ui/Checkbox",
   component: Checkbox,
   tags: ["autodocs"],
   argTypes: {},
-}
-export default meta
+};
+export default meta;
 
-type Story = StoryObj<typeof Checkbox>
+type Story = StoryObj<typeof Checkbox>;
 
 export const Base: Story = {
   render: (args) => (
@@ -31,7 +31,7 @@ export const Base: Story = {
     </div>
   ),
   args: {},
-}
+};
 export const Disabled: Story = {
   render: (args) => (
     <div className="flex items-center space-x-2">
@@ -47,4 +47,4 @@ export const Disabled: Story = {
   args: {
     disabled: true,
   },
-}
+};

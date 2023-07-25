@@ -1,23 +1,23 @@
 // [build] library: 'shadcn'
-import { Meta, StoryObj } from "@storybook/react"
+import { Meta, StoryObj } from "@storybook/react";
 
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "../components/ui/accordion"
+} from "../components/ui/accordion";
 
 const meta: Meta<typeof Accordion> = {
   title: "ui/Accordion",
   component: Accordion,
   tags: ["autodocs"],
   argTypes: {},
-}
+};
 
-export default meta
+export default meta;
 
-type Story = StoryObj<typeof Accordion>
+type Story = StoryObj<typeof Accordion>;
 
 export const Base: Story = {
   render: (args) => (
@@ -47,4 +47,4 @@ export const Base: Story = {
     type: "single",
     collapsible: true,
   },
-}
+};

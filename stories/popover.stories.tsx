@@ -1,25 +1,25 @@
 // [build] library: 'shadcn'
-import { Meta, StoryObj } from "@storybook/react"
-import { Settings2 } from "lucide-react"
+import { Meta, StoryObj } from "@storybook/react";
+import { Settings2 } from "lucide-react";
 
-import { Button } from "../components/ui/button"
-import { Input } from "../components/ui/input"
-import { Label } from "../components/ui/label"
+import { Button } from "../components/ui/button";
+import { Input } from "../components/ui/input";
+import { Label } from "../components/ui/label";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "../components/ui/popover"
+} from "../components/ui/popover";
 
 const meta: Meta<typeof Popover> = {
   title: "ui/Popover",
   component: Popover,
   tags: ["autodocs"],
   argTypes: {},
-}
-export default meta
+};
+export default meta;
 
-type Story = StoryObj<typeof Popover>
+type Story = StoryObj<typeof Popover>;
 
 export const Base: Story = {
   render: (args) => (
@@ -77,4 +77,4 @@ export const Base: Story = {
     </Popover>
   ),
   args: {},
-}
+};

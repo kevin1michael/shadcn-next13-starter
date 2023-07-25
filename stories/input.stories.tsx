@@ -1,19 +1,19 @@
 // [build] library: 'shadcn'
-import { Meta, StoryObj } from "@storybook/react"
+import { Meta, StoryObj } from "@storybook/react";
 
-import { Button } from "../components/ui/button"
-import { Input } from "../components/ui/input"
-import { Label } from "../components/ui/label"
+import { Button } from "../components/ui/button";
+import { Input } from "../components/ui/input";
+import { Label } from "../components/ui/label";
 
 const meta: Meta<typeof Input> = {
   title: "ui/Input",
   component: Input,
   tags: ["autodocs"],
   argTypes: {},
-}
-export default meta
+};
+export default meta;
 
-type Story = StoryObj<typeof Input>
+type Story = StoryObj<typeof Input>;
 
 export const Default: Story = {
   render: (args) => <Input {...args} />,
@@ -21,11 +21,11 @@ export const Default: Story = {
     type: "email",
     placeholder: "Email",
   },
-}
+};
 export const Disabled: Story = {
   render: (args) => <Input disabled {...args} />,
   args: { ...Default.args },
-}
+};
 export const WithLabel: Story = {
   render: (args) => (
     <div className="grid w-full max-w-sm items-center gap-1.5">
@@ -34,7 +34,7 @@ export const WithLabel: Story = {
     </div>
   ),
   args: { ...Default.args },
-}
+};
 export const WithText: Story = {
   render: (args) => (
     <div className="grid w-full max-w-sm items-center gap-1.5">
@@ -44,7 +44,7 @@ export const WithText: Story = {
     </div>
   ),
   args: { ...Default.args },
-}
+};
 export const WithButton: Story = {
   render: (args) => (
     <div className="flex w-full max-w-sm items-center space-x-2">
@@ -53,4 +53,4 @@ export const WithButton: Story = {
     </div>
   ),
   args: { ...Default.args },
-}
+};

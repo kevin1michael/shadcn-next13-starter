@@ -1,28 +1,24 @@
 // [build] library: 'shadcn'
-import { Meta, StoryObj } from "@storybook/react"
-import { CalendarDays } from "lucide-react"
+import { Meta, StoryObj } from "@storybook/react";
+import { CalendarDays } from "lucide-react";
 
-import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
-} from "../components/ui/avatar"
-import { Button } from "../components/ui/button"
+import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar";
+import { Button } from "../components/ui/button";
 import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
-} from "../components/ui/hover-card"
+} from "../components/ui/hover-card";
 
 const meta: Meta<typeof HoverCard> = {
   title: "ui/HoverCard",
   component: HoverCard,
   tags: ["autodocs"],
   argTypes: {},
-}
-export default meta
+};
+export default meta;
 
-type Story = StoryObj<typeof HoverCard>
+type Story = StoryObj<typeof HoverCard>;
 
 export const Base: Story = {
   render: (args) => (
@@ -53,4 +49,4 @@ export const Base: Story = {
     </HoverCard>
   ),
   args: {},
-}
+};

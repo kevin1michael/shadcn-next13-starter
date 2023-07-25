@@ -1,5 +1,5 @@
 // [build] library: 'shadcn'
-import { Meta, StoryObj } from "@storybook/react"
+import { Meta, StoryObj } from "@storybook/react";
 
 import {
   Menubar,
@@ -15,17 +15,17 @@ import {
   MenubarSubContent,
   MenubarSubTrigger,
   MenubarTrigger,
-} from "../components/ui/menubar"
+} from "../components/ui/menubar";
 
 const meta: Meta<typeof Menubar> = {
   title: "ui/Menubar",
   component: Menubar,
   tags: ["autodocs"],
   argTypes: {},
-}
-export default meta
+};
+export default meta;
 
-type Story = StoryObj<typeof Menubar>
+type Story = StoryObj<typeof Menubar>;
 
 export const Base: Story = {
   render: (args) => (
@@ -118,8 +118,8 @@ export const Base: Story = {
     </Menubar>
   ),
   args: {},
-}
+};
 
 {
-  ;(" ")
+  (" ");
 }

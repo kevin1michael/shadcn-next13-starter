@@ -1,5 +1,5 @@
 // [build] library: 'shadcn'
-import { Meta, StoryObj } from "@storybook/react"
+import { Meta, StoryObj } from "@storybook/react";
 
 import {
   AlertDialog,
@@ -11,19 +11,19 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from "../components/ui/alert-dialog"
-import { Button } from "../components/ui/button"
+} from "../components/ui/alert-dialog";
+import { Button } from "../components/ui/button";
 
 const meta: Meta<typeof AlertDialog> = {
   title: "ui/AlertDialog",
   component: AlertDialog,
   tags: ["autodocs"],
   argTypes: {},
-}
+};
 
-export default meta
+export default meta;
 
-type Story = StoryObj<typeof AlertDialog>
+type Story = StoryObj<typeof AlertDialog>;
 
 export const Base: Story = {
   render: () => (
@@ -47,4 +47,4 @@ export const Base: Story = {
     </AlertDialog>
   ),
   args: {},
-}
+};

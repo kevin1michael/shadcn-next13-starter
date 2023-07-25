@@ -1,5 +1,5 @@
 // [build] library: 'shadcn'
-import { Meta, StoryObj } from "@storybook/react"
+import { Meta, StoryObj } from "@storybook/react";
 
 import {
   Select,
@@ -10,17 +10,17 @@ import {
   SelectSeparator,
   SelectTrigger,
   SelectValue,
-} from "../components/ui/select"
+} from "../components/ui/select";
 
 const meta: Meta<typeof Select> = {
   title: "ui/Select",
   component: Select,
   tags: ["autodocs"],
   argTypes: {},
-}
-export default meta
+};
+export default meta;
 
-type Story = StoryObj<typeof Select>
+type Story = StoryObj<typeof Select>;
 
 export const Base: Story = {
   render: (args) => (
@@ -60,4 +60,4 @@ export const Base: Story = {
     </Select>
   ),
   args: {},
-}
+};

@@ -1,7 +1,7 @@
 // [build] library: 'shadcn'
-import { Meta, StoryObj } from "@storybook/react"
+import { Meta, StoryObj } from "@storybook/react";
 
-import { Button } from "../components/ui/button"
+import { Button } from "../components/ui/button";
 import {
   Dialog,
   DialogContent,
@@ -10,19 +10,19 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "../components/ui/dialog"
-import { Input } from "../components/ui/input"
-import { Label } from "../components/ui/label"
+} from "../components/ui/dialog";
+import { Input } from "../components/ui/input";
+import { Label } from "../components/ui/label";
 
 const meta: Meta<typeof Dialog> = {
   title: "ui/Dialog",
   component: Dialog,
   tags: ["autodocs"],
   argTypes: {},
-}
-export default meta
+};
+export default meta;
 
-type Story = StoryObj<typeof Dialog>
+type Story = StoryObj<typeof Dialog>;
 
 export const Base: Story = {
   render: (args) => (
@@ -58,4 +58,4 @@ export const Base: Story = {
     </Dialog>
   ),
   args: {},
-}
+};
