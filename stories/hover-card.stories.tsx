@@ -1,6 +1,6 @@
 // [build] library: 'shadcn'
-import { Meta, StoryObj } from "@storybook/react"
-import { CalendarDays } from "lucide-react"
+import { Meta, StoryObj } from "@storybook/react";
+import { CalendarDays } from "lucide-react";
 
 import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar";
 import { Button } from "../components/ui/button";

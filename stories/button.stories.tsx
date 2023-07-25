@@ -1,6 +1,6 @@
 // [build] library: 'shadcn'
-import { Meta, StoryObj } from "@storybook/react"
-import { Loader2, Mail } from "lucide-react"
+import { Meta, StoryObj } from "@storybook/react";
+import { Loader2, Mail } from "lucide-react";
 
 import { Button } from "../components/ui/button";
 

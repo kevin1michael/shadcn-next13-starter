@@ -1,6 +1,6 @@
 // [build] library: 'shadcn'
-import React from "react"
-import { Meta, StoryObj } from "@storybook/react"
+import React from "react";
+import { Meta, StoryObj } from "@storybook/react";
 
 import { ScrollArea } from "../components/ui/scroll-area";
 import { Separator } from "../components/ui/separator";

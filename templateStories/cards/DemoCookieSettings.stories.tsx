@@ -1,4 +1,4 @@
-// [build] library: 'chadcn'
+// [build] library: 'shadcn'
 // [build] template: true
 
 import { Meta, StoryObj } from "@storybook/react";
