@@ -82,9 +82,10 @@ export default function FormsPage() {
             <SidebarNav
               items={sidebarNavItems}
               setSelectedSidebarItem={setSelectedSidebarItem}
+              selectedSidebarItem={selectedSidebarItem}
             />
           </aside>
-          <div className="flex-1 lg:max-w-2xl">{selectedItem.page}</div>
+          <div className="flex-1 lg:max-w-2xl">{selectedItem?.page}</div>
         </div>
       </div>
     </>
