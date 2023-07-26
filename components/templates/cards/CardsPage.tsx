@@ -26,7 +26,7 @@ function DemoContainer({
     <div
       className={cn(
         "flex items-center justify-center [&>div]:w-full",
-        className,
+        className
       )}
       {...props}
     />
