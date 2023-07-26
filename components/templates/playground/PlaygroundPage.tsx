@@ -33,23 +33,7 @@ export const metadata: Metadata = {
 export default function PlaygroundPage() {
   return (
     <>
-      <div className="md:hidden">
-        <Image
-          src="/examples/playground-light.png"
-          width={1280}
-          height={916}
-          alt="Playground"
-          className="block dark:hidden"
-        />
-        <Image
-          src="/examples/playground-dark.png"
-          width={1280}
-          height={916}
-          alt="Playground"
-          className="hidden dark:block"
-        />
-      </div>
-      <div className={"hidden h-full flex-col md:flex p-12"}>
+      <div className={"h-full flex-col md:flex p-12"}>
         <div className="container flex flex-col items-start justify-between space-y-2 py-4 sm:flex-row sm:items-center sm:space-y-0 md:h-16">
           <h2 className="text-lg font-semibold">Playground</h2>
           <div className="ml-auto flex w-full space-x-2 sm:justify-end">
