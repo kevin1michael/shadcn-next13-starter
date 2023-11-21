@@ -20,6 +20,9 @@ import {
 
 
 import { Button } from "../components/ui/button";
+import { useState } from "react";
+import { DateRange } from "react-day-picker";
+import { addDays, format } from "date-fns";
 
 const meta: Meta<typeof Calendar> = {
   title: "ui/Calendar",
@@ -65,6 +68,11 @@ export const DatePicker: Story = {
 
 export const DatePickerRange: Story = {
   render: (args) => {
+    const [date, setDate] = useState<DateRange | undefined>({
+      from: new Date(2023, 0, 20),
+      to: addDays(new Date(2023, 0, 20), 20),
+    });
+
     return (
       <div className={"grid gap-2"}>
         <Popover>
@@ -75,11 +83,29 @@ export const DatePickerRange: Story = {
               className={"w-[300px] justify-start text-left font-normal"}
             >
               <CalendarIcon className="mr-2 h-4 w-4" />
-              <span>Pick a date</span>
+              {date?.from ? (
+                date.to ? (
+                  <>
+                    {format(date.from, "LLL dd, y")} -{" "}
+                    {format(date.to, "LLL dd, y")}
+                  </>
+                ) : (
+                  format(date.from, "LLL dd, y")
+                )
+              ) : (
+                <span>Pick a date</span>
+              )}
             </Button>
           </PopoverTrigger>
           <PopoverContent className="w-auto p-0" align="start">
-            <Calendar initialFocus mode="range" numberOfMonths={2} />
+            <Calendar
+              initialFocus
+              mode="range"
+              defaultMonth={date?.from}
+              selected={date}
+              onSelect={setDate}
+              numberOfMonths={2}
+            />
           </PopoverContent>
         </Popover>
       </div>
@@ -90,6 +116,8 @@ export const DatePickerRange: Story = {
 
 export const DatePickerWithPresets: Story = {
   render: (args) => {
+    const [date, setDate] = useState<Date | undefined>(new Date(2023, 0, 20));
+
     return (
       <Popover>
         <PopoverTrigger asChild>
@@ -98,14 +126,22 @@ export const DatePickerWithPresets: Story = {
             className={"w-[240px] justify-start text-left font-normal"}
           >
             <CalendarIcon className="mr-2 h-4 w-4" />
-            <span>Pick a date</span>
+            {date ? (
+              format(date, "LLL dd, y")
+            ) : (
+              <span>Pick a date</span>
+            )}
           </Button>
         </PopoverTrigger>
         <PopoverContent
           align="start"
           className="flex w-auto flex-col space-y-2 p-2"
         >
-          <Select>
+          <Select onValueChange={(value) => {
+            const newDate = new Date();
+            newDate.setDate(newDate.getDate() + parseInt(value));
+            setDate(newDate);
+          }}>
             <SelectTrigger>
               <SelectValue placeholder="Select" />
             </SelectTrigger>
@@ -117,7 +153,13 @@ export const DatePickerWithPresets: Story = {
             </SelectContent>
           </Select>
           <div className="rounded-md border">
-            <Calendar mode="single" />
+          <Calendar
+              initialFocus
+              mode="single"
+              defaultMonth={date}
+              selected={date}
+              onSelect={setDate}
+            />
           </div>
         </PopoverContent>
       </Popover>
